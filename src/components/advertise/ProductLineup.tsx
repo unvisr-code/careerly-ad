@@ -172,22 +172,36 @@ export default function ProductLineup() {
           </div>
 
           {activeTab === "guide" && (
-            <div className="max-w-3xl mx-auto space-y-3">
-              {GUIDE_ITEMS.map((item) => (
-                <div
-                  key={item.label}
-                  className="card-glow flex items-center gap-5 rounded-2xl bg-white border border-border/60 px-6 py-5"
+            <>
+              <div className="max-w-3xl mx-auto space-y-3">
+                {GUIDE_ITEMS.map((item) => (
+                  <div
+                    key={item.label}
+                    className="card-glow flex items-center gap-5 rounded-2xl bg-white border border-border/60 px-6 py-5"
+                  >
+                    <div className="w-10 h-10 rounded-xl bg-accent-light text-accent flex items-center justify-center shrink-0 text-sm font-bold">
+                      {item.icon}
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <span className="text-sm font-bold text-text-primary block">{item.label}</span>
+                      <span className="text-sm text-text-secondary">{item.value}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-12 text-center">
+                <a
+                  href="/careerly-ad-guide-v3.pdf"
+                  download="Careerly_Ad_Guide_v3.pdf"
+                  aria-label="광고 소재 가이드 PDF 다운로드 (179KB)"
+                  className="inline-flex items-center gap-2 px-8 py-4 bg-accent text-white font-bold rounded-xl hover:bg-accent/90 transition-colors shadow-glow"
                 >
-                  <div className="w-10 h-10 rounded-xl bg-accent-light text-accent flex items-center justify-center shrink-0 text-sm font-bold">
-                    {item.icon}
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <span className="text-sm font-bold text-text-primary block">{item.label}</span>
-                    <span className="text-sm text-text-secondary">{item.value}</span>
-                  </div>
-                </div>
-              ))}
-            </div>
+                  <span aria-hidden="true">📥</span>
+                  <span>광고 소재 가이드 다운로드 (PDF, 179KB)</span>
+                </a>
+              </div>
+            </>
           )}
 
           {activeTab === "policy" && (

@@ -9,7 +9,6 @@ import WhyCareerlySection from "@/components/advertise/WhyCareerlySection";
 import ProductLineup from "@/components/advertise/ProductLineup";
 import InlineCTA from "@/components/advertise/InlineCTA";
 import ExposureSection from "@/components/advertise/ExposureSection";
-import MaterialGuide from "@/components/advertise/MaterialGuide";
 import FAQSection from "@/components/advertise/FAQSection";
 import CTABanner from "@/components/advertise/CTABanner";
 import FooterSection from "@/components/advertise/FooterSection";
@@ -28,7 +27,6 @@ export default function ClientPage() {
         <ProductLineup />
         <InlineCTA />
         <ExposureSection />
-        <MaterialGuide />
         <FAQSection />
         <CTABanner />
       </main>
