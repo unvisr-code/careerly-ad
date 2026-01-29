@@ -154,7 +154,7 @@ export const PRODUCTS: Product[] = [
     fields: ["Banner Plus / Promoted Post 선택", "소재 2종", "랜딩 URL (HTTPS 필수)", "UTM 파라미터 권장"],
     exampleCopy: "우리 회사만의 전용 광고 슬롯으로 한 달 집중 노출",
     pricing: [
-      { period: "4주", price: "490만원" },
+      { period: "4주", price: "350만원" },
     ],
   },
 ];
@@ -203,7 +203,7 @@ export const FAQ_ITEMS: FAQItem[] = [
   {
     question: "Sponsorship 패키지는 무엇인가요?",
     answer:
-      "월 단위(4주) 최상위 프리미엄 패키지입니다. 프리미엄 구간(position 2~8) 우선 노출권, Banner Plus 또는 Promoted Post 중 1종 선택, 소재 2종 로테이션, 주간 리포트 4회, 중간 점검 콜 1회가 모두 포함되어 490만원(VAT 별도)입니다. 월 단위로 동시 1개만 운영되며, 안정적인 브랜드 노출이 필요한 고객사에 최적입니다.",
+      "월 단위(4주) 최상위 프리미엄 패키지입니다. 프리미엄 구간(position 2~8) 우선 노출권, Banner Plus 또는 Promoted Post 중 1종 선택, 소재 2종 로테이션, 주간 리포트 4회, 중간 점검 콜 1회가 모두 포함되어 350만원(VAT 별도)입니다. 월 단위로 동시 1개만 운영되며, 안정적인 브랜드 노출이 필요한 고객사에 최적입니다.",
   },
 ];
 
@@ -222,7 +222,7 @@ export const PRODUCT_OPTIONS = [
   { value: "card", label: "Card Banner — Plus (1주 55만원~)" },
   { value: "strip", label: "Strip Banner — Plus (1주 55만원~)" },
   { value: "promoted_post", label: "Promoted Post (1주 70만원~)" },
-  { value: "sponsorship", label: "Sponsorship — Premium (4주 490만원)" },
+  { value: "sponsorship", label: "Sponsorship — Premium (4주 350만원)" },
 ];
 
 export const DURATION_OPTIONS = [
