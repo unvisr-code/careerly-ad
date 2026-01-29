@@ -168,7 +168,7 @@ export const FAQ_ITEMS: FAQItem[] = [
   {
     question: "가격은 어떻게 되나요?",
     answer:
-      "Banner Basic(Image/Native)은 1주 35만원, 2주 63만원, 4주 112만원입니다. Banner Plus(Card/Strip)는 1주 55만원, 2주 99만원, 4주 176만원입니다. Promoted Post는 1주 70만원, 2주 126만원, 4주 224만원입니다. 최상위 Sponsorship 패키지는 4주 490만원(프리미엄 구간 + 주간 리포트 + 관리 포함)입니다. 8주 이상 장기 계약 시 10% 할인이 적용됩니다. 모든 가격은 VAT 별도입니다.",
+      "Banner Basic(Image/Native)은 1주 35만원, 2주 63만원, 4주 112만원입니다. Banner Plus(Card/Strip)는 1주 55만원, 2주 99만원, 4주 176만원입니다. Promoted Post는 1주 70만원, 2주 126만원, 4주 224만원입니다. 최상위 Sponsorship 패키지는 4주 350만원(프리미엄 구간 + 주간 리포트 + 관리 포함)입니다. 8주 이상 장기 계약 시 10% 할인이 적용됩니다. 모든 가격은 VAT 별도입니다.",
   },
   {
     question: "집행 중 소재 변경이 가능한가요?",

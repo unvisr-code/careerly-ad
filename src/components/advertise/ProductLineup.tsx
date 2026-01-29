@@ -68,6 +68,7 @@ export default function ProductLineup() {
   const bannersBasic = PRODUCTS.filter((p) => p.type === "banner" && (p.variant === "image" || p.variant === "native"));
   const bannersPlus = PRODUCTS.filter((p) => p.type === "banner" && (p.variant === "card" || p.variant === "strip"));
   const promoted = PRODUCTS.filter((p) => p.type === "promoted_post");
+  const sponsorship = PRODUCTS.filter((p) => p.type === "sponsorship");
   const [activeTab, setActiveTab] = useState<InfoTab>("guide");
 
   useEffect(() => {
@@ -124,13 +125,25 @@ export default function ProductLineup() {
           </div>
         </div>
 
-        <div className="mb-16">
+        <div className="mb-14">
           <h3 className="text-sm font-bold text-text-muted uppercase tracking-widest mb-6 flex items-center gap-3 reveal">
             <span className="h-[2px] w-8 bg-gradient-to-r from-accent to-[#F2946B] rounded-full" />
             Promoted Post
           </h3>
           <div className="stagger-children grid grid-cols-1 md:grid-cols-2 gap-5">
             {promoted.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+        </div>
+
+        <div className="mb-16">
+          <h3 className="text-sm font-bold text-text-muted uppercase tracking-widest mb-6 flex items-center gap-3 reveal">
+            <span className="h-[2px] w-8 bg-gradient-to-r from-accent to-[#F2946B] rounded-full" />
+            Sponsorship — Premium Package
+          </h3>
+          <div className="stagger-children grid grid-cols-1 md:grid-cols-2 gap-5">
+            {sponsorship.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
           </div>

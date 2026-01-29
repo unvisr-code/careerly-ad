@@ -5,6 +5,25 @@ import { trackEvent } from "@/lib/ga4";
 import type { Product, BannerVariant } from "@/types/advertise";
 
 function BannerPreview({ variant, type }: { variant?: BannerVariant; type: string }) {
+  if (type === "sponsorship") {
+    return (
+      <div className="rounded-xl bg-gradient-to-br from-accent/5 via-accent/10 to-accent/5 border-2 border-accent/20 p-4 mb-5 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-20 h-20 bg-accent/5 rounded-full blur-2xl" />
+        <div className="relative flex items-center justify-center gap-3">
+          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-accent to-[#F2946B] flex items-center justify-center shadow-lg">
+            <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+            </svg>
+          </div>
+          <div className="text-center">
+            <div className="text-[10px] font-bold text-accent mb-0.5">Premium Package</div>
+            <div className="text-[8px] text-text-muted">프리미엄 구간 우선 노출</div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   if (type === "promoted_post") {
     return (
       <div className="rounded-xl bg-bg-subtle border border-border/40 p-3 mb-5">
@@ -99,9 +118,11 @@ export default function ProductCard({ product }: { product: Product }) {
               <span className="w-1 h-1 rounded-full bg-accent" />
               {product.type === "promoted_post"
                 ? "Promoted Post"
-                : product.variant === "image" || product.variant === "native"
-                  ? `Basic · ${product.variant}`
-                  : `Plus · ${product.variant}`}
+                : product.type === "sponsorship"
+                  ? "Premium"
+                  : product.variant === "image" || product.variant === "native"
+                    ? `Basic · ${product.variant}`
+                    : `Plus · ${product.variant}`}
             </span>
             <h3 className="text-xl font-bold tracking-[-0.02em]">{product.name}</h3>
           </div>

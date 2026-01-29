@@ -63,11 +63,10 @@ export default function HeroSection() {
                 </svg>
               </Button>
               <Button
-                href="/Careerly_광고상품_소개서.pdf"
+                href="/careerly-ad-guide-v4.pdf"
                 variant="secondary"
                 size="lg"
-                target="_blank"
-                rel="noopener noreferrer"
+                download="Careerly_Ad_Guide_v4.pdf"
                 onClick={() => trackEvent("advertise_pdf_download_click", { location: "hero" })}
               >
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
