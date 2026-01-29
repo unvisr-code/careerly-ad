@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Satoshi:wght@400;500;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-accent: #FF5A3C;
+  --color-accent-hover: #E84D30;
+  --color-accent-light: #FFF0ED;
+  --color-accent-subtle: #FFF5F3;
+  --color-accent-mid: #FFD9D2;
+
+  --color-bg-primary: #FFFFFF;
+  --color-bg-secondary: #F8F9FB;
+  --color-bg-subtle: #F3F4F6;
+  --color-bg-warm: #FFF9F7;
+
+  --color-text-primary: #191F28;
+  --color-text-secondary: #4B5563;
+  --color-text-tertiary: #8B95A1;
+  --color-text-muted: #6B7280;
+
+  --color-border: #E5E7EB;
+  --color-border-subtle: #F3F4F6;
+
+  --color-error: #EF4444;
+  --color-success: #10B981;
+
+  --font-display: 'Satoshi', system-ui, sans-serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+
+  --shadow-soft: 0 2px 10px rgba(0, 0, 0, 0.03);
+  --shadow-card: 0 10px 40px -10px rgba(0, 0, 0, 0.05);
+  --shadow-glow: 0 0 20px rgba(255, 90, 60, 0.15);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* ─── Typography ─── */
+.text-balance {
+  text-wrap: balance;
+}
+
+/* ─── Animations ─── */
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+}
+
+@keyframes float-medium {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(2deg); }
+}
+
+@keyframes marquee-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ─── Reveal System ─── */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stagger-children > * {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.stagger-children.revealed > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stagger-children.revealed > *:nth-child(1) { transition-delay: 0ms; }
+.stagger-children.revealed > *:nth-child(2) { transition-delay: 100ms; }
+.stagger-children.revealed > *:nth-child(3) { transition-delay: 200ms; }
+.stagger-children.revealed > *:nth-child(4) { transition-delay: 300ms; }
+
+/* ─── Visual Effects ─── */
+.gradient-text {
+  background: linear-gradient(135deg, #FF5A3C 0%, #FF8A75 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-gradient {
+  background-color: #ffffff;
+  background-image:
+    radial-gradient(at 80% 0%, hsla(12, 90%, 96%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, hsla(220, 50%, 98%, 1) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, hsla(12, 90%, 98%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(220, 50%, 98%, 1) 0px, transparent 50%);
+}
+
+.grain {
+  position: relative;
+}
+
+.grain::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.card-glow {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card-glow:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.08);
+}
+
+.section-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--color-border), transparent);
+}
+
+/* ─── Marquee ─── */
+.marquee-container {
+  mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+
+.marquee-track {
+  animation: marquee-scroll 30s linear infinite;
+  width: max-content;
+}
