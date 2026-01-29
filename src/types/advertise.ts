@@ -1,5 +1,5 @@
 export type BannerVariant = "strip" | "image" | "card" | "native";
-export type AdType = "banner" | "promoted_post";
+export type AdType = "banner" | "promoted_post" | "sponsorship";
 
 export interface Product {
   id: string;
