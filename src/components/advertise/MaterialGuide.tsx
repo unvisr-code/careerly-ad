@@ -42,13 +42,13 @@ export default function MaterialGuide() {
 
       <div className="mt-12 text-center reveal">
         <a
-          href="/careerly-ad-guide-v2.pdf"
-          download="Careerly_Ad_Guide_v2.pdf"
-          aria-label="광고 소재 가이드 PDF 다운로드 (172KB)"
+          href="/careerly-ad-guide-v3.pdf"
+          download="Careerly_Ad_Guide_v3.pdf"
+          aria-label="광고 소재 가이드 PDF 다운로드 (179KB)"
           className="inline-flex items-center gap-2 px-8 py-4 bg-accent text-white font-bold rounded-xl hover:bg-accent/90 transition-colors shadow-glow"
         >
           <span aria-hidden="true">📥</span>
-          <span>광고 소재 가이드 다운로드 (PDF, 172KB)</span>
+          <span>광고 소재 가이드 다운로드 (PDF, 179KB)</span>
         </a>
       </div>
     </SectionWrapper>
