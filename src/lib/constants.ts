@@ -45,9 +45,9 @@ export const PRODUCTS: Product[] = [
     fields: ["메인 이미지 (필수)", "랜딩 URL (HTTPS 필수)", "타이틀 (선택)", "설명 (선택)", "CTA 텍스트 (선택)"],
     exampleCopy: "새로운 디자인 툴, 지금 만나보세요",
     pricing: [
-      { period: "1주", price: "150만원" },
-      { period: "2주", price: "270만원" },
-      { period: "4주", price: "480만원" },
+      { period: "1주", price: "25만원" },
+      { period: "2주", price: "45만원" },
+      { period: "4주", price: "80만원" },
     ],
   },
   {
@@ -67,9 +67,9 @@ export const PRODUCTS: Product[] = [
     fields: ["타이틀 (20~35자 권장)", "설명 (40~80자 권장)", "CTA 텍스트 (4~10자)", "랜딩 URL (HTTPS 필수)", "이미지 (선택)"],
     exampleCopy: "시니어 백엔드 엔지니어가 말하는 커리어 전환 스토리",
     pricing: [
-      { period: "1주", price: "150만원" },
-      { period: "2주", price: "270만원" },
-      { period: "4주", price: "480만원" },
+      { period: "1주", price: "25만원" },
+      { period: "2주", price: "45만원" },
+      { period: "4주", price: "80만원" },
     ],
   },
   {
@@ -89,9 +89,9 @@ export const PRODUCTS: Product[] = [
     fields: ["타이틀 (20~35자 권장)", "설명 (40~80자 권장)", "CTA 텍스트 (4~10자)", "랜딩 URL (HTTPS 필수)", "썸네일 이미지 (권장)"],
     exampleCopy: "2026 개발자 채용 트렌드 리포트 무료 다운로드",
     pricing: [
-      { period: "1주", price: "170만원" },
-      { period: "2주", price: "306만원" },
-      { period: "4주", price: "544만원" },
+      { period: "1주", price: "30만원" },
+      { period: "2주", price: "54만원" },
+      { period: "4주", price: "96만원" },
     ],
   },
   {
@@ -111,9 +111,9 @@ export const PRODUCTS: Product[] = [
     fields: ["타이틀 (20~35자 권장)", "설명 (선택)", "CTA 텍스트 (4~10자)", "랜딩 URL (HTTPS 필수)", "배너 이미지 (선택)"],
     exampleCopy: "지금 가입하면 첫 달 무료! 개발자 성장 플랫폼 →",
     pricing: [
-      { period: "1주", price: "170만원" },
-      { period: "2주", price: "306만원" },
-      { period: "4주", price: "544만원" },
+      { period: "1주", price: "30만원" },
+      { period: "2주", price: "54만원" },
+      { period: "4주", price: "96만원" },
     ],
   },
   {
@@ -132,9 +132,9 @@ export const PRODUCTS: Product[] = [
     fields: ["게시글 제목 (권장)", "게시글 본문 (마크다운/HTML)", "이미지 (선택)", "작성자 표기 (브랜드명/프로필)", "랜딩 URL (선택)"],
     exampleCopy: "우리 팀이 MSA로 전환한 이유와 그 과정에서 배운 것들",
     pricing: [
-      { period: "1주", price: "220만원" },
-      { period: "2주", price: "396만원" },
-      { period: "4주", price: "704만원" },
+      { period: "1주", price: "40만원" },
+      { period: "2주", price: "72만원" },
+      { period: "4주", price: "128만원" },
     ],
   },
 ];
@@ -148,17 +148,17 @@ export const FAQ_ITEMS: FAQItem[] = [
   {
     question: "가격은 어떻게 되나요?",
     answer:
-      "Banner Basic(Image/Native)은 1주 150만원, 2주 270만원, 4주 480만원입니다. Banner Plus(Card/Strip)는 1주 170만원, 2주 306만원, 4주 544만원입니다. Promoted Post는 1주 220만원, 2주 396만원, 4주 704만원입니다. Banner+Promoted Post 4주 번들은 1,125만원(5~10% 할인)이며, 8주 이상 장기 계약 시 10% 추가 할인됩니다. 모든 가격은 VAT 별도입니다.",
+      "Banner Basic(Image/Native)은 1주 25만원, 2주 45만원, 4주 80만원입니다. Banner Plus(Card/Strip)는 1주 30만원, 2주 54만원, 4주 96만원입니다. Promoted Post는 1주 40만원, 2주 72만원, 4주 128만원입니다. 장기 집행 시 8주 이상 계약 시 10% 할인이 적용됩니다. 모든 가격은 VAT 별도입니다.",
   },
   {
     question: "집행 중 소재 변경이 가능한가요?",
     answer:
-      "기본 1회 무상 교체가 포함되어 있습니다. 2회 이상 변경 시 추가 소재 등록 옵션(+30만원/종)이 적용됩니다. 오타·링크 오류 등 긴급 변경은 운영팀 재량으로 우선 반영 후 사후 검수합니다.",
+      "기본 1회 무상 교체가 포함되어 있습니다. 2회 이상 변경 시 추가 소재 등록 옵션(+10만원/종)이 적용됩니다. 오타·링크 오류 등 긴급 변경은 운영팀 재량으로 우선 반영 후 사후 검수합니다.",
   },
   {
     question: "광고 성과 리포팅은 어떻게 받나요?",
     answer:
-      "기본 제공 지표는 노출(imp)·클릭(click)·CTR입니다. 캠페인 종료 후 5영업일 내 CSV/스냅샷 리포트를 이메일로 전달합니다. 주간 리포트(+30만원/주)나 중간 점검 콜(+20만원/회) 옵션도 이용 가능합니다.",
+      "기본 제공 지표는 노출(imp)·클릭(click)·CTR입니다. 캠페인 종료 후 5영업일 내 CSV/스냅샷 리포트를 이메일로 전달합니다. 주간 리포트(+10만원/주)나 중간 점검 콜(+10만원/회) 옵션도 이용 가능합니다.",
   },
   {
     question: "환불 정책은 어떻게 되나요?",
@@ -168,12 +168,12 @@ export const FAQ_ITEMS: FAQItem[] = [
   {
     question: "배너와 프로모션 게시글을 동시에 집행할 수 있나요?",
     answer:
-      "가능합니다. 동일 기간 Banner + Promoted Post 번들 패키지를 이용하시면 4주 기준 1,125만원(단품 합산 대비 5~10% 할인)에 집행할 수 있습니다. 견적 문의 시 번들 패키지를 요청해 주세요.",
+      "가능합니다. 동일 기간 Banner + Promoted Post를 함께 집행하실 수 있으며, 견적 문의 시 번들 패키지를 요청하시면 할인 혜택을 받으실 수 있습니다.",
   },
   {
     question: "추가 옵션에는 어떤 것이 있나요?",
     answer:
-      "프리미엄 구간(+50만원/주), 추가 소재 등록(+30만원/종), A/B 테스트(+50만원), 배너 소재 제작 대행(+40만원/종), 프로모션 소재 제작 대행(+80만원/건) 등의 옵션을 선택하실 수 있습니다.",
+      "프리미엄 구간(+15만원/주), 추가 소재 등록(+10만원/종), A/B 테스트(+15만원), 배너 소재 제작 대행(+20만원/종), 프로모션 소재 제작 대행(+35만원/건) 등의 옵션을 선택하실 수 있습니다.",
   },
   {
     question: "긴급 집행이 가능한가요?",
@@ -192,12 +192,12 @@ export const AD_PURPOSES = [
 ];
 
 export const PRODUCT_OPTIONS = [
-  { value: "image", label: "Image Banner — Basic (1주 150만원~)" },
-  { value: "native", label: "Native Banner — Basic (1주 150만원~)" },
-  { value: "card", label: "Card Banner — Plus (1주 170만원~)" },
-  { value: "strip", label: "Strip Banner — Plus (1주 170만원~)" },
-  { value: "promoted_post", label: "Promoted Post (1주 220만원~)" },
-  { value: "bundle", label: "Bundle: Banner + Promoted Post (4주 1,125만원)" },
+  { value: "image", label: "Image Banner — Basic (1주 25만원~)" },
+  { value: "native", label: "Native Banner — Basic (1주 25만원~)" },
+  { value: "card", label: "Card Banner — Plus (1주 30만원~)" },
+  { value: "strip", label: "Strip Banner — Plus (1주 30만원~)" },
+  { value: "promoted_post", label: "Promoted Post (1주 40만원~)" },
+  { value: "bundle", label: "Bundle: Banner + Promoted Post (문의 시 할인)" },
 ];
 
 export const DURATION_OPTIONS = [
@@ -209,10 +209,10 @@ export const DURATION_OPTIONS = [
 ];
 
 export const BUDGET_RANGES = [
-  "150만원 미만 (상담 필요)",
-  "150만원 ~ 300만원",
-  "300만원 ~ 500만원",
-  "500만원 ~ 1,000만원",
-  "1,000만원 이상",
+  "50만원 미만",
+  "50만원 ~ 100만원",
+  "100만원 ~ 200만원",
+  "200만원 ~ 500만원",
+  "500만원 이상",
   "미정 (상담 희망)",
 ];
